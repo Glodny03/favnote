@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 const Button = styled.button`
-  background-color: #e6e6e6;
+  background-color: ${(theme) => theme.primary};
   border: none;
   width: ${({ width }) => width || "220px"};
   height: 47px;
@@ -13,12 +13,12 @@ const Button = styled.button`
   ${({ secondary }) =>
     secondary &&
     css`
-      background-color: #ffd82b;
-      width: 105px;
-      height: 30px;
-      font-size: 10px;
-      font-weight: 400;
-    `}
+background-color: #ffd82b;
+width: 105 px;
+height: 30 px;
+font-size: 10 px;
+font-weight: 400;
+`}
 `;
 
 export default Button;
